@@ -4,8 +4,14 @@
   @include container;
   display: flex;
   flex-direction: column;
-  gap: 32px;
+  gap: 5rem;
   margin-block: 2.5rem;
+}
+
+.heroLeftSection {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .heroTitle {
@@ -21,16 +27,20 @@
 .heroButton {
   @include hover-lift;
   padding: 18px 40px;
+  align-self: baseline;
 }
 
 .heroImage {
   width: 100%;
   height: auto;
-  max-height: 576px;
 }
 
 @media ($breakpoint-lg) {
   .heroSection {
     flex-direction: row;
+    margin-block: 5rem;
+  }
+
+  .heroLeftSection {
   }
 }

@@ -8,6 +8,11 @@ export default function Home() {
       <Header></Header>
       <main className={styles.main}>
         <Hero />
+        <Hero />
+        <Hero />
+        <Hero />
+        <Hero />
+        <Hero />
       </main>
       <footer className={styles.footer}></footer>
     </div>
