@@ -1,0 +1,22 @@
+@use "index" as *;
+
+.logoSection {
+  @include container;
+  display: grid;
+  gap: 1.5rem;
+  margin-block: 2.5rem;
+  flex-wrap: wrap;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  align-items: center;
+}
+
+.logoImage {
+  opacity: 0.3;
+  width: 100%;
+  height: auto;
+  max-height: 80px;
+  padding: 1rem;
+}
+
+@media ($breakpoint-lg) {
+}

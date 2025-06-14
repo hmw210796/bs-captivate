@@ -1,6 +1,7 @@
 import styles from "./page.module.scss";
 import Header from "@/components/Specific/Header/Header";
 import HeroSection from "@/components/Specific/HeroSection/HeroSection";
+import LogoSection from "@/components/Specific/LogoSection/LogoSection";
 
 export default function Home() {
   return (
@@ -8,7 +9,7 @@ export default function Home() {
       <Header></Header>
       <main className={styles.main}>
         <HeroSection />
-        <HeroSection />
+        <LogoSection />
         <HeroSection />
         <HeroSection />
         <HeroSection />
