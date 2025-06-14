@@ -1,0 +1,19 @@
+<svg width="22" height="23" viewBox="0 0 22 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="635c92dce19fbd00a5fcb560_Checkmark.svg" clip-path="url(#clip0_1_957)">
+<path id="Vector" d="M11.0038 21.3795C16.3557 21.3795 20.6942 17.0409 20.6942 11.689C20.6942 6.33711 16.3557 1.99854 11.0038 1.99854C5.65187 1.99854 1.31329 6.33711 1.31329 11.689C1.31329 17.0409 5.65187 21.3795 11.0038 21.3795Z" stroke="url(#paint0_linear_1_957)" stroke-width="1.57143"/>
+<path id="Vector_2" d="M14.6533 9.18237L9.63905 14.1966L7.35989 11.9174" stroke="url(#paint1_linear_1_957)" stroke-width="1.57143" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<defs>
+<linearGradient id="paint0_linear_1_957" x1="0.52758" y1="1.21281" x2="21.48" y2="22.1652" gradientUnits="userSpaceOnUse">
+<stop stop-color="#11CCA8"/>
+<stop offset="1" stop-color="#4AC5DF"/>
+</linearGradient>
+<linearGradient id="paint1_linear_1_957" x1="7.35989" y1="9.18237" x2="12.0415" y2="15.9921" gradientUnits="userSpaceOnUse">
+<stop stop-color="#11CCA8"/>
+<stop offset="1" stop-color="#4AC5DF"/>
+</linearGradient>
+<clipPath id="clip0_1_957">
+<rect width="22" height="22" fill="white" transform="translate(0 0.334961)"/>
+</clipPath>
+</defs>
+</svg>

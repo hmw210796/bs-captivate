@@ -1,0 +1,21 @@
+<svg width="29" height="29" viewBox="0 0 29 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="63693e90445f9b2033d9c5a4_Icon%20Webinar.svg">
+<path id="Vector" d="M18.09 13.5039L12.84 10.0039V17.0039L18.09 13.5039Z" stroke="url(#paint0_linear_1_928)" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Vector_2" d="M5.83997 21.3789H23.34C24.3065 21.3789 25.09 20.5954 25.09 19.6289V7.37891C25.09 6.41241 24.3065 5.62891 23.34 5.62891H5.83997C4.87347 5.62891 4.08997 6.41241 4.08997 7.37891V19.6289C4.08997 20.5954 4.87347 21.3789 5.83997 21.3789Z" stroke="url(#paint1_linear_1_928)" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Vector_3" d="M18.09 24.8789H11.09" stroke="url(#paint2_linear_1_928)" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<defs>
+<linearGradient id="paint0_linear_1_928" x1="12.84" y1="10.0039" x2="19.56" y2="15.0439" gradientUnits="userSpaceOnUse">
+<stop stop-color="#11CCA8"/>
+<stop offset="1" stop-color="#4AC5DF"/>
+</linearGradient>
+<linearGradient id="paint1_linear_1_928" x1="25.09" y1="21.3789" x2="9.96997" y2="1.21891" gradientUnits="userSpaceOnUse">
+<stop stop-color="#11CCA8"/>
+<stop offset="1" stop-color="#4AC5DF"/>
+</linearGradient>
+<linearGradient id="paint2_linear_1_928" x1="-nan" y1="-nan" x2="-nan" y2="-nan" gradientUnits="userSpaceOnUse">
+<stop stop-color="#11CCA8"/>
+<stop offset="1" stop-color="#4AC5DF"/>
+</linearGradient>
+</defs>
+</svg>

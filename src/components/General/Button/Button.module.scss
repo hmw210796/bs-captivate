@@ -1,0 +1,28 @@
+@use "index" as *;
+
+.button {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.5rem 1.5rem;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 21px;
+  border: none;
+  border-radius: 100vw;
+  cursor: pointer;
+
+  &.primary__ {
+    background: linear-gradient(106.78deg, #11cca8 0%, #4ac5df 100%);
+    color: $black-primary;
+  }
+
+  &.secondary__ {
+    background: linear-gradient(
+      135deg,
+      rgba(17, 204, 168, 0.3),
+      rgba(74, 197, 223, 0.3)
+    );
+    color: #ffffff;
+  }
+}
