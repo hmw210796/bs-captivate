@@ -1,0 +1,36 @@
+@use "index" as *;
+
+.section {
+  @include container;
+  padding-block: 2.5rem;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.cardContainer {
+  background: $black-secondary;
+  border-radius: 2rem;
+  padding: 2rem;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.cardTitle {
+  @include heading;
+  margin-bottom: 1rem;
+}
+
+.cardDescription {
+  margin-bottom: 2rem;
+}
+
+@media ($breakpoint-lg) {
+  .cardContainer {
+    padding: 3rem;
+  }
+}

@@ -8,6 +8,7 @@ import ImageHighlightsSection from "@/components/Specific/ImageHighlightsSection
 import PricingSection from "@/components/Specific/PricingSection/PricingSection";
 import FrequestQuestionsSection from "@/components/Specific/FrequestQuestionsSection/FrequestQuestionsSection";
 import TestimonialSection from "@/components/Specific/TestimonialSection/TestimonialSection";
+import GetStartedSection from "@/components/Specific/GetStartedSection/GetStartedSection";
 
 export default function Home() {
   return (
@@ -23,6 +24,8 @@ export default function Home() {
         <FrequestQuestionsSection />
 
         <TestimonialSection />
+
+        <GetStartedSection />
       </main>
       <footer className={styles.footer}></footer>
     </div>
