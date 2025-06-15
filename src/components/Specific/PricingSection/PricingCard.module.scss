@@ -1,0 +1,83 @@
+@use "index" as *;
+
+.cardContainer {
+  background: $black-secondary;
+  border-radius: 2rem;
+  padding: 2rem;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+.pricingPlan {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  @include container;
+  margin-block: 2.5rem;
+}
+
+.pricingPlanTitle {
+  font-size: 2rem;
+  line-height: 1.3;
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+
+.pricingPlanDescription {
+  margin-bottom: 2rem;
+  line-height: 1.75;
+}
+
+.pricingPlanSubtitle {
+  margin-bottom: 1rem;
+  font-weight: 500;
+  letter-spacing: 2px;
+}
+
+.pricingPlanPrice {
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 43.2px;
+  background: linear-gradient(101.02deg, #11cca8 0%, #4ac5df 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.pricingPlanItems {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.pricingPlanButton {
+  background-image: linear-gradient(
+      135deg,
+      rgba(17, 204, 168, 0.05),
+      rgba(74, 197, 223, 0.05)
+    ),
+    linear-gradient(180deg, #0e1a1f, #0e1a1f);
+  display: flex;
+}
+
+@media ($breakpoint-lg) {
+  .cardContainer {
+    padding: 2.75rem;
+  }
+
+  .pricingPlan {
+    flex-direction: row;
+    margin-block: 5rem;
+    align-items: center;
+    gap: 6rem;
+  }
+
+  .pricingPlanTitle {
+    font-size: 2.75rem;
+  }
+
+  .pricingPlanDescription {
+    font-size: 18px;
+  }
+}

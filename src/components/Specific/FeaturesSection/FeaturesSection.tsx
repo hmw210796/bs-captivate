@@ -8,6 +8,7 @@ import Image from "next/image";
 import { motion } from "motion/react";
 import Label from "@/components/General/Label/Label";
 import FeaturesCard from "./FeaturesCard";
+import SectionIntro from "@/components/General/SectionIntro/SectionIntro";
 
 const fadeScaleInAnimation = {
   initial: { opacity: 0, transform: "scale(0.7)" },
@@ -20,14 +21,10 @@ const fadeScaleInAnimation = {
 const FeaturesSection = () => {
   return (
     <section className={styles.featuresSection}>
-      <div className={styles.featuresTopSection}>
-        <h1 className={styles.featuresTopTitle}>Features</h1>
-
-        <p className={styles.featuresTopDescription}>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Dolor in
-          laoreet justo lectus a eget vitae. Tellus id pretium.
-        </p>
-      </div>
+      <SectionIntro
+        title="Features"
+        description=" Lorem ipsum dolor sit amet, consectetur adipiscing elit. Dolor in laoreet justo lectus a eget vitae. Tellus id pretium."
+      />
 
       <motion.div {...fadeScaleInAnimation} className={styles.featuresFirstRow}>
         <FeaturesCard className={styles.featuresFirstRowCard}>

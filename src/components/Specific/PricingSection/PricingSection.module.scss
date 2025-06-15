@@ -1,0 +1,21 @@
+@use "index" as *;
+
+.pricingSection {
+  @include container;
+}
+
+.pricingCardSection {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.businessCard {
+  border: 2px solid #4ac5df;
+}
+
+@media ($breakpoint-lg) {
+  .pricingCardSection {
+    flex-direction: row;
+  }
+}

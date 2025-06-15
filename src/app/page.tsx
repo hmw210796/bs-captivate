@@ -5,20 +5,18 @@ import HeroSection from "@/components/Specific/HeroSection/HeroSection";
 import LogoSection from "@/components/Specific/LogoSection/LogoSection";
 import SplitFeature from "@/components/General/SplitFeature/SplitFeature";
 import ImageHighlightsSection from "@/components/Specific/ImageHighlightsSection/ImageHighlightsSection";
+import PricingSection from "@/components/Specific/PricingSection/PricingSection";
 
 export default function Home() {
   return (
     <div className={styles.page}>
       <Header></Header>
       <main className={styles.main}>
-        {/* <HeroSection />
-        <LogoSection />
-        <FeaturesSection /> */}
-
+        {/* <HeroSection /> */}
+        {/* <LogoSection /> */}
+        {/* <FeaturesSection /> */}
         <ImageHighlightsSection />
-
-        <HeroSection />
-        <HeroSection />
+        <PricingSection />
       </main>
       <footer className={styles.footer}></footer>
     </div>
