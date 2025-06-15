@@ -9,13 +9,14 @@ import PricingSection from "@/components/Specific/PricingSection/PricingSection"
 import FrequestQuestionsSection from "@/components/Specific/FrequestQuestionsSection/FrequestQuestionsSection";
 import TestimonialSection from "@/components/Specific/TestimonialSection/TestimonialSection";
 import GetStartedSection from "@/components/Specific/GetStartedSection/GetStartedSection";
+import Footer from "@/components/Specific/Footer/Footer";
 
 export default function Home() {
   return (
     <div className={styles.page}>
       <Header></Header>
       <main className={styles.main}>
-        <HeroSection />
+        {/* <HeroSection />
         <LogoSection />
         <FeaturesSection />
         <ImageHighlightsSection />
@@ -25,7 +26,9 @@ export default function Home() {
 
         <TestimonialSection />
 
-        <GetStartedSection />
+        <GetStartedSection /> */}
+
+        <Footer />
       </main>
       <footer className={styles.footer}></footer>
     </div>

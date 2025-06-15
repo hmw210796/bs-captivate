@@ -134,3 +134,9 @@
   font-size: 18px;
   line-height: 1.75;
 }
+
+@mixin text-blue-gradient {
+  background: linear-gradient(101.02deg, #11cca8 0%, #4ac5df 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
