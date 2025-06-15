@@ -6,7 +6,6 @@ import styles from "./LogoSection.module.scss";
 
 import Image from "next/image";
 import { motion, scale } from "motion/react";
-import { div } from "motion/react-client";
 
 const LogoArray = [
   {

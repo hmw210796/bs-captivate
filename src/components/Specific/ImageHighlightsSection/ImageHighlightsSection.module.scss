@@ -1,0 +1,7 @@
+@use "index" as *;
+
+@media ($breakpoint-lg) {
+  .flexRowReverse {
+    flex-direction: row-reverse;
+  }
+}
