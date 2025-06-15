@@ -16,6 +16,7 @@ const fadeScaleInAnimation = {
   viewport: {
     once: true,
   },
+  transition: { duration: 0.7 },
 };
 
 const FeaturesSection = () => {

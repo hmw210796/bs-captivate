@@ -18,6 +18,7 @@ const HeroSection = () => {
       viewport={{
         once: true,
       }}
+      transition={{ duration: 0.7 }}
     >
       <div className={styles.heroLeftSection}>
         <h1 className={styles.heroTitle}>Beautiful presentations</h1>

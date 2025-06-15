@@ -6,6 +6,7 @@ import LogoSection from "@/components/Specific/LogoSection/LogoSection";
 import SplitFeature from "@/components/General/SplitFeature/SplitFeature";
 import ImageHighlightsSection from "@/components/Specific/ImageHighlightsSection/ImageHighlightsSection";
 import PricingSection from "@/components/Specific/PricingSection/PricingSection";
+import FrequestQuestionsSection from "@/components/Specific/FrequestQuestionsSection/FrequestQuestionsSection";
 
 export default function Home() {
   return (
@@ -17,6 +18,8 @@ export default function Home() {
         {/* <FeaturesSection /> */}
         <ImageHighlightsSection />
         <PricingSection />
+
+        <FrequestQuestionsSection />
       </main>
       <footer className={styles.footer}></footer>
     </div>

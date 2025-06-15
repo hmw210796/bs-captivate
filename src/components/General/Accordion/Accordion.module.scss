@@ -1,0 +1,78 @@
+@use "index" as *;
+
+.accordionContainer {
+  width: 100%;
+  max-width: 788px;
+  margin: 0 auto;
+}
+
+.accordionItem {
+  border-bottom: 1px solid #ffffff33;
+}
+
+.accordionButton {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem 0;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 1.125rem;
+  font-weight: 600;
+  text-align: left;
+}
+
+.icon {
+  font-size: 1.5rem;
+  font-weight: 300;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  border: 1px solid #4ac5df;
+  min-width: 32px;
+  height: 32px;
+}
+
+.accordionContent {
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.show {
+  max-height: 500px; // Adjust this value based on your content
+}
+
+.question {
+  padding-right: 1rem;
+}
+
+.answer {
+  padding: 0 0 1.5rem;
+  line-height: 1.6;
+  font-size: 1rem;
+}
+
+@media ($breakpoint-lg) {
+  .accordionContainer {
+    margin-right: 50px;
+  }
+
+  .accordionButton {
+    font-size: 28px;
+    line-height: 40px;
+  }
+
+  .icon {
+    border-width: 2px;
+    width: 40px;
+    height: 40px;
+  }
+
+  .answer {
+    font-size: 18px;
+    padding-bottom: 2rem;
+  }
+}

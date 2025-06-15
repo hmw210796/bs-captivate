@@ -1,0 +1,22 @@
+@use "index" as *;
+
+.section {
+  @include container;
+  margin-block: 2.5rem;
+}
+
+.sectionTitle {
+  @include heading;
+  margin-block: 1rem;
+}
+
+@media ($breakpoint-lg) {
+  .section {
+    margin-block: 5rem;
+  }
+
+  .sectionTitle {
+    margin-block: 2.5 rem;
+    margin-left: 120px;
+  }
+}
