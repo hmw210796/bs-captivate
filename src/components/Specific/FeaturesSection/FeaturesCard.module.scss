@@ -1,0 +1,17 @@
+@use "index" as *;
+
+.cardContainer {
+  background: $black-secondary;
+  border-radius: 2rem;
+  padding: 2rem;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+@media ($breakpoint-lg) {
+  .cardContainer {
+    padding: 3rem;
+  }
+}

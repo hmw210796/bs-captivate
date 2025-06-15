@@ -1,0 +1,26 @@
+@use "index" as *;
+
+.container {
+  color: linear-gradient(101.02deg, #11cca8 0%, #4ac5df 100%);
+
+  padding: 6.7px 1rem 10px;
+  border-radius: 0.5rem;
+  text-transform: uppercase;
+  font-size: 14px;
+  line-height: 1.4;
+  font-weight: 500;
+  letter-spacing: 2px;
+  width: fit-content;
+  background: linear-gradient(
+    135deg,
+    rgba(17, 204, 168, 0.15),
+    rgba(74, 197, 223, 0.15)
+  );
+  background-attachment: scroll;
+}
+
+.text {
+  background: linear-gradient(101.02deg, #11cca8 0%, #4ac5df 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}

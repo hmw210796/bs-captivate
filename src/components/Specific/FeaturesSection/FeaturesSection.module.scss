@@ -1,0 +1,142 @@
+@use "index" as *;
+
+.featuresSection {
+  @include container;
+}
+
+.featuresTopSection {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-top: 1.5rem;
+  margin-bottom: 48px;
+}
+
+.featuresTopTitle {
+  @include heading;
+  margin-bottom: 1rem;
+}
+
+.featuresTopDescription,
+.featuresParagraph {
+  line-height: 1.75;
+}
+
+.featuresFirstRow {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.featuresCardImageContainer {
+  position: relative;
+  width: 100%;
+  margin-bottom: 0.5rem;
+
+  &.fade__ {
+    &::after {
+      display: block;
+      content: "";
+      position: absolute;
+      right: 0;
+      bottom: 0%;
+      width: 100%;
+      background: linear-gradient(180deg, rgba(16, 35, 40, 0) 0%, #102328 100%);
+      height: 96px;
+    }
+  }
+
+  &.branding__ {
+    margin-right: -2rem;
+    width: auto;
+  }
+
+  &.livestream__ {
+    margin: -2rem -2rem 2.5rem 0;
+    width: unset;
+  }
+
+  &.analytics__ {
+    margin-top: auto;
+  }
+}
+
+.featuresCardImage {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.featuresCardTitle {
+  margin-block: 1rem;
+  font-size: 2rem;
+}
+
+.featuresSecondRow {
+  margin-top: 32px;
+}
+
+.featuresSecondRowCard {
+  gap: 2rem;
+}
+
+.featuresThirdRow {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.featuresThirdRowCard {
+  flex: 1;
+}
+
+@media ($breakpoint-lg) {
+  .featuresTopSection {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .featuresTopDescription {
+    flex: 0.7;
+  }
+
+  .featuresFirstRow {
+    flex-direction: row;
+
+    .featuresFirstRowCard {
+      &:first-child {
+        flex: 0.7;
+      }
+
+      &:last-child {
+        flex: 0.3;
+      }
+    }
+  }
+
+  .featuresTopDescription,
+  .featuresParagraph {
+    @include paragraph;
+  }
+
+  .featuresSecondRowCard {
+    flex-direction: row !important;
+    align-items: center;
+  }
+
+  .featuresThirdRow {
+    flex-direction: row;
+  }
+
+  .featuresCardImageContainer {
+    &.branding__ {
+      margin-right: -2.5rem;
+    }
+
+    &.livestream__ {
+      margin: -3rem -3rem 2.5rem 0;
+    }
+  }
+}

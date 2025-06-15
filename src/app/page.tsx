@@ -1,3 +1,4 @@
+import FeaturesSection from "@/components/Specific/FeaturesSection/FeaturesSection";
 import styles from "./page.module.scss";
 import Header from "@/components/Specific/Header/Header";
 import HeroSection from "@/components/Specific/HeroSection/HeroSection";
@@ -10,7 +11,7 @@ export default function Home() {
       <main className={styles.main}>
         <HeroSection />
         <LogoSection />
-        <HeroSection />
+        <FeaturesSection />
         <HeroSection />
         <HeroSection />
         <HeroSection />
