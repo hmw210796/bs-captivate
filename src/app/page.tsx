@@ -7,19 +7,22 @@ import SplitFeature from "@/components/General/SplitFeature/SplitFeature";
 import ImageHighlightsSection from "@/components/Specific/ImageHighlightsSection/ImageHighlightsSection";
 import PricingSection from "@/components/Specific/PricingSection/PricingSection";
 import FrequestQuestionsSection from "@/components/Specific/FrequestQuestionsSection/FrequestQuestionsSection";
+import TestimonialSection from "@/components/Specific/TestimonialSection/TestimonialSection";
 
 export default function Home() {
   return (
     <div className={styles.page}>
       <Header></Header>
       <main className={styles.main}>
-        {/* <HeroSection /> */}
-        {/* <LogoSection /> */}
-        {/* <FeaturesSection /> */}
+        <HeroSection />
+        <LogoSection />
+        <FeaturesSection />
         <ImageHighlightsSection />
         <PricingSection />
 
         <FrequestQuestionsSection />
+
+        <TestimonialSection />
       </main>
       <footer className={styles.footer}></footer>
     </div>

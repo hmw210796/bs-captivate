@@ -2,6 +2,7 @@
 
 .featuresSection {
   @include container;
+  padding-block: 2.5rem;
 }
 
 .featuresParagraph {
@@ -33,7 +34,7 @@
   }
 
   &.branding__ {
-    margin-right: -2rem;
+    margin-right: -2.5rem;
     width: auto;
   }
 
@@ -78,6 +79,10 @@
 }
 
 @media ($breakpoint-lg) {
+  .featuresSection {
+    padding-block: 5rem;
+  }
+
   .featuresParagraph {
     @include paragraph;
   }
@@ -107,7 +112,7 @@
 
   .featuresCardImageContainer {
     &.branding__ {
-      margin-right: -2.5rem;
+      margin-right: -3rem;
     }
 
     &.livestream__ {

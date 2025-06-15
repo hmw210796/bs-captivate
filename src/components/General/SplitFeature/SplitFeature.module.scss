@@ -5,7 +5,7 @@
   flex-direction: column;
   gap: 2rem;
   @include container;
-  margin-block: 2.5rem;
+  padding-block: 2.5rem;
 }
 .splitFeatureLeft {
   flex: 0.35;
@@ -39,7 +39,7 @@
 @media ($breakpoint-lg) {
   .splitFeature {
     flex-direction: row;
-    margin-block: 5rem;
+    padding-block: 5rem;
     align-items: center;
     gap: 6rem;
   }

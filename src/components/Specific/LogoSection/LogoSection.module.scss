@@ -4,7 +4,7 @@
   @include container;
   display: grid;
   gap: 1.5rem;
-  margin-block: 2.5rem;
+  padding-block: 2.5rem;
   flex-wrap: wrap;
   grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
   align-items: center;
