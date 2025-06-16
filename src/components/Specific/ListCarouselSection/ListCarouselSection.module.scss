@@ -1,12 +1,13 @@
 @use "index" as *;
 
 .section {
-  @include container;
   display: flex;
   gap: 1.5rem;
-  width: fit-content;
+  width: 100%;
   padding-block: 3rem;
   overflow-x: auto;
+  @include container;
+  width: 100%;
 
   /* Hide scrollbar for Chrome, Safari and Opera */
   &::-webkit-scrollbar {
