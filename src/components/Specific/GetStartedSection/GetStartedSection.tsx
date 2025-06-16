@@ -18,7 +18,7 @@ const fadeScaleInAnimation = {
 const GetStartedSection = () => {
   const [email, setEmail] = useState("");
 
-  const onSubmit = (e) => {
+  const onSubmit = (e: any) => {
     e.preventDefault();
 
     alert(`${email} signed up!`);
