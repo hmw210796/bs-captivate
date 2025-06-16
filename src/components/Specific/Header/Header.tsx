@@ -27,13 +27,15 @@ export default function Header() {
           }`}
         >
           <div className={`${styles.navContent} `}>
-            <Image
-              src={"/icons/logo-captivate.svg"}
-              alt="captivate-logo"
-              width={140}
-              height={32}
-              className={styles.logo}
-            />
+            <Link href="/">
+              <Image
+                src={"/icons/logo-captivate.svg"}
+                alt="captivate-logo"
+                width={140}
+                height={32}
+                className={styles.logo}
+              />
+            </Link>
 
             <div className={styles.navLinks}>
               {navItems.map((item) => (
