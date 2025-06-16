@@ -1,11 +1,10 @@
 "use client";
 
-import React from "react";
+import React, { useEffect, useRef } from "react";
 
 import styles from "./ListCarouselSection.module.scss";
 
 import Image from "next/image";
-import { motion } from "motion/react";
 
 const CarouselArray = [
   {
@@ -30,7 +29,7 @@ const CarouselArray = [
   },
   {
     name: "Webinars",
-    imageUrl: "/icons/icons-webinars.svg",
+    imageUrl: "/icons/icon-webinars.svg",
   },
   {
     name: "Staff training",
@@ -38,8 +37,50 @@ const CarouselArray = [
   },
 ];
 
-const LogoSection = () => {
-  return <div></div>;
+type CarouselItemProps = {
+  title: string;
+  imageUrl: string;
 };
 
-export default LogoSection;
+const CarouselItem: React.FC<CarouselItemProps> = ({ title, imageUrl }) => {
+  return (
+    <div className={styles.card}>
+      <Image
+        src={imageUrl}
+        width={28}
+        height={28}
+        alt={`icon-${title}`}
+        className={styles.cardIcon}
+      />
+      {title}
+    </div>
+  );
+};
+
+const ListCarouselSection = () => {
+  const containerRef = useRef<HTMLDivElement | null>(null);
+
+  useEffect(() => {
+    if (containerRef.current) {
+      const container = containerRef.current;
+      const contentWidth = container.scrollWidth;
+      const containerWdith = container.clientWidth;
+
+      container.scrollLeft = (contentWidth - containerWdith) / 2;
+    }
+  }, []);
+
+  return (
+    <section className={styles.section} ref={containerRef}>
+      {CarouselArray.map((item) => (
+        <CarouselItem
+          title={item.name}
+          imageUrl={item.imageUrl}
+          key={item.name}
+        />
+      ))}
+    </section>
+  );
+};
+
+export default ListCarouselSection;

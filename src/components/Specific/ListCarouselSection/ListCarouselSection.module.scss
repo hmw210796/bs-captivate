@@ -1,13 +1,33 @@
 @use "index" as *;
 
-.logoSection {
+.section {
   @include container;
-  display: grid;
+  display: flex;
   gap: 1.5rem;
-  margin-block: 2.5rem;
-  flex-wrap: wrap;
-  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  width: fit-content;
+  padding-block: 3rem;
+  overflow-x: auto;
+
+  /* Hide scrollbar for Chrome, Safari and Opera */
+  &::-webkit-scrollbar {
+    display: none;
+  }
+
+  /* Hide scrollbar for IE, Edge and Firefox */
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+.card {
+  display: flex;
+  justify-content: center;
+  flex-wrap: nowrap;
   align-items: center;
+  gap: 1rem;
+  padding: 1rem 1.5rem;
+  border: 1px solid #4ac5df80;
+  border-radius: 8px;
+  text-wrap: nowrap;
 }
 
 .logoImage {
@@ -19,4 +39,14 @@
 }
 
 @media ($breakpoint-lg) {
+  .card {
+    padding: 20px 25px;
+  }
+}
+
+@media ($breakpoint-xl) {
+  .section {
+    overflow-x: visible;
+    justify-content: center;
+  }
 }

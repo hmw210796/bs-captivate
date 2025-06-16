@@ -10,6 +10,7 @@ import FrequestQuestionsSection from "@/components/Specific/FrequestQuestionsSec
 import TestimonialSection from "@/components/Specific/TestimonialSection/TestimonialSection";
 import GetStartedSection from "@/components/Specific/GetStartedSection/GetStartedSection";
 import Footer from "@/components/Specific/Footer/Footer";
+import ListCarouselSection from "@/components/Specific/ListCarouselSection/ListCarouselSection";
 
 export default function Home() {
   return (
@@ -19,6 +20,8 @@ export default function Home() {
         <HeroSection />
         <LogoSection />
         <FeaturesSection />
+        <ListCarouselSection />
+
         <ImageHighlightsSection />
         <PricingSection />
 

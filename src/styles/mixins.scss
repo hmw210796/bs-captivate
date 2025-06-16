@@ -29,25 +29,6 @@
   }
 }
 
-// Responsive mixins
-@mixin mobile-only {
-  @media (max-width: #{$breakpoint-md - 1px}) {
-    @content;
-  }
-}
-
-@mixin tablet-up {
-  @media (min-width: $breakpoint-md) {
-    @content;
-  }
-}
-
-@mixin desktop-up {
-  @media (min-width: $breakpoint-lg) {
-    @content;
-  }
-}
-
 // Font stlyings
 @mixin heading {
   font-size: 2.75rem;
