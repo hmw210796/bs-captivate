@@ -1,11 +1,10 @@
 "use client";
 
-import React from "react";
+import React, { useRef, useState } from "react";
 
 import { motion } from "motion/react";
 
 import styles from "./GetStartedSection.module.scss";
-import Image from "next/image";
 import Button from "@/components/General/Button/Button";
 
 const fadeScaleInAnimation = {
@@ -17,9 +16,17 @@ const fadeScaleInAnimation = {
 };
 
 const GetStartedSection = () => {
+  const [email, setEmail] = useState("");
+
+  const onSubmit = (e) => {
+    e.preventDefault();
+
+    alert(`${email} signed up!`);
+  };
+
   return (
     <motion.section className={styles.section} {...fadeScaleInAnimation}>
-      <div className={styles.cardContainer}>
+      <form className={styles.cardContainer} onSubmit={onSubmit}>
         <h3 className={styles.cardTitle}>Get started today</h3>
 
         <p className={styles.cardDescription}>
@@ -31,15 +38,17 @@ const GetStartedSection = () => {
         <div className={styles.inputContainer}>
           <input
             type="email"
-            name=""
-            id=""
+            name="email"
+            id="email"
             placeholder="Email address"
             className={styles.input}
+            onChange={(e) => setEmail(e.target.value)}
           />
 
           <Button
             className={`${styles.formButton} ${styles.tabletUp__}`}
             size="large"
+            type="submit"
           >
             Sign up
           </Button>
@@ -48,10 +57,11 @@ const GetStartedSection = () => {
         <Button
           className={`${styles.formButton} ${styles.mobile__}`}
           size="large"
+          type="submit"
         >
           Sign up
         </Button>
-      </div>
+      </form>
     </motion.section>
   );
 };
