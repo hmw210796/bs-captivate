@@ -67,6 +67,14 @@
 
 .featuresSecondRowCard {
   gap: 2rem;
+
+  .featuresSecondRowCardLeft {
+    flex: 0.4;
+  }
+
+  .featuresCardImageContainer {
+    flex: 0.6;
+  }
 }
 
 .featuresThirdRow {

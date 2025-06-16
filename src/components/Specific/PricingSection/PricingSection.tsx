@@ -56,7 +56,7 @@ const BusinessPlan: PricingCardProps = {
 
 const PricingSection = () => {
   return (
-    <section className={styles.pricingSection}>
+    <section className={styles.pricingSection} id="pricing">
       <SectionIntro
         title="Pricing"
         description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Dolor in laoreet justo lectus a eget vitae. Tellus id pretium."

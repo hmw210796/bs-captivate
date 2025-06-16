@@ -38,7 +38,7 @@ const FAQArray = [
 
 const FrequestQuestionsSection = () => {
   return (
-    <section className={styles.section}>
+    <section className={styles.section} id="faq">
       <h1 className={styles.sectionTitle}>Frequent questions</h1>
 
       <Accordion items={FAQArray}></Accordion>

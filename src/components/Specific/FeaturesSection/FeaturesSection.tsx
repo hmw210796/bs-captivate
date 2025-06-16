@@ -21,7 +21,7 @@ const fadeScaleInAnimation = {
 
 const FeaturesSection = () => {
   return (
-    <section className={styles.featuresSection}>
+    <section className={styles.featuresSection} id="features">
       <SectionIntro
         title="Features"
         description=" Lorem ipsum dolor sit amet, consectetur adipiscing elit. Dolor in laoreet justo lectus a eget vitae. Tellus id pretium."

@@ -20,6 +20,15 @@ export type PricingCardProps = {
   includedList: PlanInclusionProps[];
 };
 
+const fadeScaleInAnimation = {
+  initial: { opacity: 0, transform: "scale(0.7)" },
+  whileInView: { opacity: 1, transform: "scale(1)" },
+  viewport: {
+    once: true,
+  },
+  transition: { duration: 0.7 },
+};
+
 const PricingCard: React.FC<PricingCardProps> = ({
   className,
   title,
@@ -28,7 +37,10 @@ const PricingCard: React.FC<PricingCardProps> = ({
   price,
 }) => {
   return (
-    <motion.div className={`${styles.cardContainer} ${className}`}>
+    <motion.div
+      className={`${styles.cardContainer} ${className}`}
+      {...fadeScaleInAnimation}
+    >
       <h3 className={styles.pricingPlanTitle}>{title}</h3>
       <div className={styles.pricingPlanSubtitle}>
         <span className={styles.pricingPlanPrice}>${price}</span> /MONTH

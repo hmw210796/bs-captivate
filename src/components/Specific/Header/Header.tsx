@@ -1,6 +1,6 @@
 "use client";
+
 import { useState } from "react";
-import { Menu, X } from "lucide-react";
 import { NavItem } from "@/types";
 import styles from "./Header.module.scss";
 import Image from "next/image";
@@ -21,67 +21,90 @@ export default function Header() {
   return (
     <header className={styles.header}>
       <nav className={styles.nav}>
-        <div className={styles.navContent}>
-          <Image
-            src={"/icons/logo-captivate.svg"}
-            alt="captivate-logo"
-            width={165}
-            height={40}
-          />
+        <div
+          className={`${styles.navContainer} ${
+            isOpen ? styles.mobileMenuOpened__ : ""
+          }`}
+        >
+          <div className={`${styles.navContent} `}>
+            <Image
+              src={"/icons/logo-captivate.svg"}
+              alt="captivate-logo"
+              width={140}
+              height={32}
+              className={styles.logo}
+            />
 
-          <div className={styles.navLinks}>
-            {navItems.map((item) => (
-              <Link key={item.href} href={item.href} className={styles.navLink}>
-                {item.label}
-              </Link>
-            ))}
-          </div>
-
-          <div className={styles.navButtons}>
-            <Link className={styles.signInBtn} href="#login">
-              Log in
-            </Link>
-            <Button className={styles.getStartedBtn} href="#signup">
-              Get Started
-            </Button>
-          </div>
-
-          <button className={styles.mobileMenuBtn} onClick={toggleMenu}>
-            <span className={`${styles.hamburgerLine} ${styles.top__}`}></span>
-            <span
-              className={`${styles.hamburgerLine} ${styles.middle__}`}
-            ></span>
-            <span
-              className={`${styles.hamburgerLine} ${styles.bottom__}`}
-            ></span>
-          </button>
-
-          {/* <button className={styles.mobileMenuBtn} onClick={toggleMenu}>
-            {isOpen ? <X size={24} /> : <Menu size={24} />}
-          </button> */}
-        </div>
-
-        {isOpen && (
-          <div className={styles.mobileMenu}>
-            <div className={styles.mobileMenuContent}>
+            <div className={styles.navLinks}>
               {navItems.map((item) => (
-                <a
+                <Link
+                  key={item.href}
+                  href={item.href}
+                  className={styles.navLink}
+                >
+                  {item.label}
+                </Link>
+              ))}
+            </div>
+
+            <div className={styles.navButtons}>
+              <Link className={styles.signInBtn} href="#login">
+                Log in
+              </Link>
+              <Button className={styles.getStartedBtn} href="#signup">
+                Get Started
+              </Button>
+            </div>
+
+            <button className={styles.mobileMenuBtn} onClick={toggleMenu}>
+              <span
+                className={`${styles.hamburgerLine} ${
+                  isOpen && styles.animate__
+                }`}
+              ></span>
+              <span
+                className={`${styles.hamburgerLine} ${
+                  isOpen && styles.animate__
+                }`}
+              ></span>
+              <span
+                className={`${styles.hamburgerLine} ${
+                  isOpen && styles.animate__
+                }`}
+              ></span>
+            </button>
+          </div>
+
+          <div
+            className={`${styles.mobileMenu} ${isOpen && styles.menuOpened__}`}
+          >
+            <div
+              className={`${styles.mobileMenuContent} ${
+                isOpen && styles.menuOpened__
+              }`}
+            >
+              {navItems.map((item) => (
+                <Link
                   key={item.href}
                   href={item.href}
                   className={styles.mobileNavLink}
                 >
                   {item.label}
-                </a>
+                </Link>
               ))}
               <div className={styles.mobileButtons}>
-                <button className={styles.mobileSignInBtn}>Sign In</button>
-                <button className={styles.mobileGetStartedBtn}>
-                  Get Started
-                </button>
+                <Link className={styles.mobileSignInBtn} href="#login">
+                  Log in
+                </Link>
+                <Button className={styles.mobileGetStartedBtn} size="large">
+                  Request a demo
+                </Button>
               </div>
             </div>
           </div>
-        )}
+        </div>
+
+        {/* Mobile menu */}
       </nav>
     </header>
   );
