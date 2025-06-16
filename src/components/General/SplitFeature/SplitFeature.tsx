@@ -26,6 +26,14 @@ const SplitFeature: React.FC<SplitFeatureProps> = ({
       {...fadeScaleInAnimation}
       className={`${styles.splitFeature} ${className}`}
     >
+      <Image
+        src={imageUrl}
+        width={700}
+        height={470}
+        alt={title}
+        className={styles.splitFeatureImage}
+      />
+
       <div className={styles.splitFeatureLeft}>
         <h3 className={styles.splitFeatureTitle}>{title}</h3>
         <p className={styles.splitFeatureDescription}>{description}</p>
@@ -44,14 +52,6 @@ const SplitFeature: React.FC<SplitFeatureProps> = ({
           ))}
         </ul>
       </div>
-
-      <Image
-        src={imageUrl}
-        width={700}
-        height={470}
-        alt={title}
-        className={styles.splitFeatureImage}
-      />
     </motion.section>
   );
 };

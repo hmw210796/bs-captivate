@@ -15,6 +15,7 @@ const ImageHighlightsSection = () => {
           "Lorem ipsum dolor",
           "Lorem ipsum dolor sit",
         ]}
+        className={styles.presentation}
       />
 
       <SplitFeature
@@ -26,7 +27,7 @@ const ImageHighlightsSection = () => {
           "Lorem ipsum dolor",
           "Lorem ipsum dolor sit",
         ]}
-        className={styles.flexRowReverse}
+        className={styles.platform}
       />
     </>
   );

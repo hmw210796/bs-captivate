@@ -34,7 +34,9 @@
   }
 
   &.branding__ {
+    margin-top: auto;
     margin-right: -2.5rem;
+    margin-bottom: -2.5rem;
     width: auto;
   }
 
@@ -99,6 +101,10 @@
         flex: 0.3;
       }
     }
+  }
+
+  .featuresCardTitle {
+    margin-top: 1.5rem;
   }
 
   .featuresSecondRowCard {

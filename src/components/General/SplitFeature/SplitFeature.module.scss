@@ -41,7 +41,7 @@
     flex-direction: row;
     padding-block: 5rem;
     align-items: center;
-    gap: 6rem;
+    gap: 6.5rem;
   }
 
   .splitFeatureTitle {
@@ -50,5 +50,6 @@
 
   .splitFeatureDescription {
     font-size: 18px;
+    margin-bottom: 2rem;
   }
 }

@@ -13,9 +13,14 @@
 
 .businessCard {
   border: 2px solid #4ac5df;
+  background: $black-primary !important;
 }
 
 @media ($breakpoint-lg) {
+  .pricingSection {
+    padding-block: 5rem;
+  }
+
   .pricingCardSection {
     flex-direction: row;
   }

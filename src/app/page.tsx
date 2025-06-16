@@ -16,7 +16,7 @@ export default function Home() {
     <div className={styles.page}>
       <Header></Header>
       <main className={styles.main}>
-        {/* <HeroSection />
+        <HeroSection />
         <LogoSection />
         <FeaturesSection />
         <ImageHighlightsSection />
@@ -24,7 +24,7 @@ export default function Home() {
 
         <FrequestQuestionsSection />
 
-        <TestimonialSection /> */}
+        <TestimonialSection />
 
         <GetStartedSection />
 

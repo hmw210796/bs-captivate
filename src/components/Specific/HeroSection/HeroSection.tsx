@@ -31,9 +31,9 @@ const HeroSection = () => {
         <Button
           href="#button"
           variant="secondary"
-          className={styles.heroButton}
+          className={styles.heroButtonContainer}
         >
-          Button text
+          <div className={styles.heroButton}>Button text</div>
         </Button>
       </div>
 

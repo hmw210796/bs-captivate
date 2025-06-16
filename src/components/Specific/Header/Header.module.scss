@@ -54,6 +54,7 @@
 
 .getStartedBtn {
   @include hover-lift;
+  font-size: 14px !important;
 }
 
 .mobileMenuBtn {
@@ -119,12 +120,10 @@
 }
 
 .mobileSignInBtn {
-  @include button-secondary;
   width: 100%;
 }
 
 .mobileGetStartedBtn {
-  @include button-primary;
   width: 100%;
 }
 @media ($breakpoint-lg) {

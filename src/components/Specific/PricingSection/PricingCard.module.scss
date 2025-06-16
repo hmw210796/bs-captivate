@@ -18,9 +18,9 @@
 }
 
 .pricingPlanTitle {
-  font-size: 2rem;
+  font-size: 36px;
   line-height: 1.3;
-  margin-bottom: 1rem;
+  margin-bottom: 1.5rem;
   font-weight: 600;
 }
 
@@ -37,28 +37,39 @@
 
 .pricingPlanPrice {
   font-weight: 600;
-  font-size: 36px;
+  font-size: 32px;
   line-height: 43.2px;
-  background: linear-gradient(101.02deg, #11cca8 0%, #4ac5df 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+
+  @include text-blue-gradient(101.02deg);
 }
 
-.pricingPlanItems {
+.pricingPlanItem {
   display: flex;
   gap: 1rem;
   align-items: center;
   margin-bottom: 1rem;
+  line-height: 1.75;
+
+  .disabled__ {
+    opacity: 0.4;
+  }
+}
+
+.pricingPlanButtonContainer {
+  background-image: linear-gradient(135deg, #11cca8, #4ac5df) !important;
+  display: flex;
+  margin-top: 1.5rem;
+  padding: 1px !important;
+  border-radius: 100vw;
 }
 
 .pricingPlanButton {
-  background-image: linear-gradient(
-      135deg,
-      rgba(17, 204, 168, 0.05),
-      rgba(74, 197, 223, 0.05)
-    ),
-    linear-gradient(180deg, #0e1a1f, #0e1a1f);
-  display: flex;
+  width: 100%;
+  background: #0f2327 !important;
+  color: #4ac5df !important;
+  padding: 1rem 2.5rem;
+  border-radius: 100vw;
+  text-align: center;
 }
 
 @media ($breakpoint-lg) {
