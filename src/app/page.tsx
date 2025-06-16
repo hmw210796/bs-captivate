@@ -24,9 +24,9 @@ export default function Home() {
 
         <FrequestQuestionsSection />
 
-        <TestimonialSection />
+        <TestimonialSection /> */}
 
-        <GetStartedSection /> */}
+        <GetStartedSection />
 
         <Footer />
       </main>

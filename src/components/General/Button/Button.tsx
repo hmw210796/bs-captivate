@@ -11,10 +11,12 @@ const Button: React.FC<ButtonProps> = ({
   onClick,
   type = "button",
   className = "",
+  size,
   ...props
 }) => {
   const baseClasses = `${styles.button}
     ${variant === "primary" ? styles.primary__ : styles.secondary__}
+    ${size === "large" ? styles.large__ : ""}
     ${className}`;
 
   // If href is provided, render as Link

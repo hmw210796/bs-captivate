@@ -1,10 +1,12 @@
 // Breakpoints
+$media-xs-width: 478px;
 $media-sm-width: 640px;
 $media-md-width: 768px;
 $media-lg-width: 990px;
 $media-xl-width: 1280px;
 $media-2xl-width: 1536px;
 
+$breakpoint-xs: "min-width: #{$media-xs-width}";
 $breakpoint-sm: "min-width: #{$media-sm-width}";
 $breakpoint-md: "min-width: #{$media-md-width}";
 $breakpoint-lg: "min-width: #{$media-lg-width}";

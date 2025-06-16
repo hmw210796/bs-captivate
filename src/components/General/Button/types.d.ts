@@ -5,4 +5,5 @@ type ButtonProps = {
   onClick?: () => void;
   type?: "button" | "submit";
   className?: string;
+  size?: "small" | "large";
 };
